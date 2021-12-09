@@ -121,11 +121,13 @@ function visualizaTabla() {
 //Función que borra las cookies al pinchar sobre el botón de su clave y muestra la tabla con los datos resultantes
 function borraCookie(clave) {
    localStorage.removeItem(clave);
+   alert("Cookie borrada");
    leeCookie();
 }
 
 //Función que borra todas las cookies que existan en la sesión y muestra la tabla con los datos resultantes
 function borrarDatos() {
    localStorage.clear();
+   alert("Se han borrado todas las cookies");
    leeCookie();
 }
