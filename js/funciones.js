@@ -129,5 +129,6 @@ function borraCookie(clave) {
 function borrarDatos() {
    localStorage.clear();
    alert("Se han borrado todas las cookies");
-   leeCookie();
+   document.getElementById("datatable").innerText="";
+   
 }
